@@ -5,27 +5,29 @@ import Card from "./Card";
 
 const projects = [
   {
-    title: "React Space",
+    title: "Transformed ADM Denim Company Website: Migrated from .html to Next.js",
     description:
-      "Handy tool belt to create amazing AR components in a React app, with redux integration via middleware️",
-    getImageSrc: () => require("../images/photo1.jpg"),
+      "Enhance the ADM Denim website by optimizing for responsiveness, SEO, and performance. Ensure accessibility and support for multiple languages. Consider state management with Context API, and prioritize testing and error handling. Document the codebase for easier maintenance.",
+    getImageSrc: () => require("../images/Screenshot 2024-03-16 062627.png"),
+    link: "https://admdenim.com/"
   },
   {
-    title: "React Infinite Scroll",
+    title: "Revamped Fascom Limited Website: Transitioned from .html to React.js",
     description:
-      "A scrollable bottom sheet with virtualisation support, native animations at 60 FPS and fully implemented in JS land 🔥️",
-    getImageSrc: () => require("../images/photo2.jpg"),
+      "The Fascom Limited website has undergone a significant enhancement, transitioning to React.js and integrating Restful APIs. This upgrade not only improves code maintainability and scalability but also enables dynamic content delivery. Users will enjoy a smoother and more interactive experience.",
+    getImageSrc: () => require("../images/Screenshot 2024-03-16 063209.png"),
+    link: "https://main.doacup6g541af.amplifyapp.com/"
   },
   {
-    title: "Photo Gallery",
+    title: "Fiber Management System",
     description:
-      "A One-stop shop for photographers to share and monetize their photos, allowing them to have a second source of income",
+      "Developed a Next.js Fiber Management System: Prioritizing Code Reusability, Optimization, and Comprehensive Testing. Includes RESTful API Integration, Login and Admin Panels, and CRUD Functionality.",
     getImageSrc: () => require("../images/photo3.jpg"),
   },
   {
-    title: "Event planner",
+    title: "QR Code Generator",
     description:
-      "A mobile application for leisure seekers to discover unique events and activities in their city with a few taps",
+      "Created a Full Stack QR Code Generator Product: Allows input of product ID to fetch and display related data, then generates a QR code. Implemented RESTful APIs and developed corresponding endpoints.",
     getImageSrc: () => require("../images/photo4.jpg"),
   },
 ];
@@ -53,6 +55,7 @@ const ProjectsSection = () => {
             title={project.title}
             description={project.description}
             imageSrc={project.getImageSrc()}
+            link={project?.link}
           />
         ))}
       </Box>
