@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { useFormik } from "formik";
+import { Container, SimpleGrid } from '@chakra-ui/react'
 import {
   Box,
   Button,
@@ -11,6 +12,7 @@ import {
   Select,
   Textarea,
   VStack,
+  Grid, GridItem
 } from "@chakra-ui/react";
 import * as Yup from 'yup';
 import FullScreenSection from "./FullScreenSection";
@@ -59,13 +61,21 @@ const LandingSection = () => {
   }, [response,]);
 
   return (
+
     <FullScreenSection
+    w="100%" 
       isDarkBackground
       backgroundColor="#512DA8"
       py={16}
       spacing={8}
     >
-      <VStack w="1024px" p={32} alignItems="flex-start">
+
+
+<SimpleGrid w={{ base: "300px", md: "400px", lg: "800px" }}>
+  <Box bg='null' >
+ <VStack w="100%" 
+      // p={32} 
+      alignItems="flex-start">
         <Heading as="h1" id="contactme-section">
           Contact me
         </Heading>
@@ -130,9 +140,16 @@ const LandingSection = () => {
               Submit
             </Button>
           </VStack>
+        
         </Box>
+        
       </VStack>
+  </Box>
+</SimpleGrid>
+      
+     
     </FullScreenSection>
+  
   );
 };
 
