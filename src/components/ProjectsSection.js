@@ -32,6 +32,7 @@ const projects = [
 
 const ProjectsSection = () => {
   return (
+
     <FullScreenSection
       backgroundColor="#14532d"
       isDarkBackground
@@ -44,8 +45,10 @@ const ProjectsSection = () => {
       </Heading>
       <Box
         display="grid"
-        gridTemplateColumns="repeat(2,minmax(0,1fr))"
+        // gridTemplateColumns="repeat(2,minmax(0,1fr))"
+        gridTemplateColumns={{base: "repeat(1,minmax(0,1fr))", md: "repeat(2,minmax(0,1fr))"}}
         gridGap={8}
+        className="project-listing"
       >
         {projects.map((project) => (
           <Card

@@ -15,3 +15,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.contact-grid {
+  justify-content: center!important;
+}
+.project-listing .chakra-stack {
+  height: 100%;
+}

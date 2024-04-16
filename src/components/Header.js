@@ -44,6 +44,7 @@ const Header = () => {
   };
 
   return (
+    // <></>
     <Box
       position="fixed"
       top={0}
