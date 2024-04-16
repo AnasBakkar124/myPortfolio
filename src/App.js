@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import { AlertProvider } from "./context/alertContext";
 import Alert from "./components/Alert";
 import CertificatSection from "./components/CertificatSection";
+import EducationSection from "./components/EducationSection";
 
 function App() {
   return (
@@ -17,7 +18,9 @@ function App() {
           <LandingSection />
           <ProjectsSection />
           <CertificatSection />
+          <EducationSection/>
           <ContactMeSection />
+          {/* <ContactMeSection /> */}
           <Footer />
           <Alert />
         </main>

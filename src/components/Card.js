@@ -15,7 +15,7 @@ const Card = ({ title, description, imageSrc, link }) => {
           {description}
         </Text>
         <Button rightIcon={<FontAwesomeIcon icon={faArrowRight} />} color="black" size="1x">
-          <a href={link}>See More</a>
+          <a href={link} target="_blank">See More</a>
         </Button>
       </VStack>
     </HStack>
